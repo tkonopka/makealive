@@ -1,0 +1,27 @@
+{
+    "name": "makealive",
+    "version": "0.1.0",
+    "description": "Bring static documents to life through controlled use of javascript",
+    "scripts": {        
+        "prebuild": "rm -fr dist && mkdir dist",
+        "build": "npm run prebuild && cat src/makealive.js > dist/makealive.js && find lib -type f -name *js | xargs cat src/makealive.js > dist/makealive-lib.js",
+        "minify": "npm run build && uglifyjs dist/makealive.js > dist/makealive.min.js && uglifyjs dist/makealive-lib.js > dist/makealive-lib.min.js",
+        "localbuild": "./localbuild"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tkonopka/makealive.git"
+    },
+    "keywords": [
+    "alive",
+    "html",
+    "md",
+    "js",
+    "javascript",
+    "visualization"    
+    ],
+    "author": "Tomasz Konopka",
+    "devDependencies" : {
+        "uglify-js": "^1.3.0"
+    }  
+}

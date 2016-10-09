@@ -1,0 +1,10 @@
+On the one hand, simplifying data entry points to markdown. Markdown content 
+is simple to write, can be converted into styled html, and can also be sanitized 
+for security purposes. However, the converted output is text-based and static.
+
+On the other hand, making for a rich user experience points to javascript. Javascript
+can generate responsive and interactive content, for example through charts. However, 
+running user-generated javascript on a website can be a security risk. 
+Also, user-generated javascript is undesirable as it mixes code (*how* to present) 
+with content (*what* to present). 
+

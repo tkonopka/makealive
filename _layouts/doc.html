@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>   
+        <title>{{ page.title }} - {{ site.title }}</title>
+        <link rel="stylesheet" href="{{ site.path }}/_includes/bootstrap-3.3.7/css/bootstrap.min.css" >        
+        <link rel="stylesheet" href="{{ site.path }}/_includes/makealive.css" >        
+        <!-- <script src="{{ site.path }}/_includes/bootstrap-3.3.7/js/bootstrap.min.js"></script> -->
+        <script src="{{ site.path }}/_includes/sanitize-html-1.13.0/sanitize-html.min.js"></script>
+        <script src="{{ site.path }}/_includes/showdown-1.4.2/showdown.min.js"></script>
+        <script src="{{ site.path }}/src/makealive.js"></script>
+        <script src="{{ site.path }}/lib/isprime.js"></script>
+        <script src="{{ site.path }}/_includes/makealive.examples.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1> {{ page.title }}</h1>
+                </div>
+            </div>
+            
+             
+            
+            <div class="row">
+                <div class="col-lg-8" id="maincontent">
+                   {{ content }}           
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

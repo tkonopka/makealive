@@ -1,0 +1,24 @@
+# Site settings
+title: makealive
+description: make html alive with javascript 
+path: /makealive
+url: "" 
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - nbproject
+  - package.json
+  - README.md
+  - localbuild
+  - LICENSE
+
+include:
+  - dist
+  - docs
+  - lib
+  - _includes
+  - index.md
