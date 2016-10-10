@@ -56,11 +56,11 @@ div.codepreview {
 }
 
 
-
 /* Code blocks */
-code {
+pre {
      font-size: 12px !important;
 }
+
 
 /* components on the examples - Try it section */
 hr {

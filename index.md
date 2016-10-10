@@ -13,6 +13,7 @@ title: makealive
 
 
 <a id="background"></a>
+
 ## Background
 
 Websites built from user-generated content strive to provide simple and secure 
@@ -57,6 +58,7 @@ Providing rich content calls for some programming, i.e. using javacsript.
 
 
 <a id="strategy"></a>
+
 ## Strategy
 
 `makealive` provides a \'bridge\' between markup and scripting. It provides 
@@ -74,6 +76,7 @@ When the markup is converted to html, the data is transformed into a new object.
 
 
 <a id="library"></a>
+
 ## Example
 
 Let\'s suppose we have an interest in the number 1271 and a conversion function 
@@ -105,6 +108,7 @@ that are of practical use, including functions for common plots and charts.
 
 
 <a id="summary"></a>
+
 ## Summary
 
 `makealive` can be viewed as an extension of standard markdown. It provides
@@ -133,10 +137,11 @@ Other documentation pages describe additional points regarding
 
 
 <a id="thanks"></a>
+
 ## Acknowledgements
 
 `makealive` has been inspired collectively by all technologies that make the web 
-experience rich and interactive, but that leave some gaps too. Special mentions are:
+experience rich and interactive, but that leave some gaps too. Special mentions:
 
 <table class="table intro">
 
