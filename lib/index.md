@@ -32,5 +32,18 @@ title: makealive library
       <div class="caption">scatterplot01</div>
     </div>
 </div>
+
+<div class="col-sm-4 col-md-3">
+    <div class="thumbnail" onclick="location.href='venn01.html'">      
+      <div class="caption">venn01</div>
+    </div>
 </div>
 
+<div class="col-sm-4 col-md-3">
+    <div class="thumbnail" onclick="location.href='venn02.html'">      
+      <div class="caption">venn02</div>
+    </div>
+</div>
+
+
+</div>

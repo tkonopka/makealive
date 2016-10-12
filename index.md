@@ -102,7 +102,7 @@ The conversion function thus transforms the JSON input into another representati
 In this case, the new representation is a styled written message that reports on 
 a computation.
 
-The <a href="lib/index.html">library</a> page provides other conversion function 
+The <a href="lib/index.html">library</a> page provides other conversion functions 
 that are of practical use, including functions for common plots and charts.
 
 
@@ -120,17 +120,20 @@ without explicitly writing executable code.
 <tr><th width="50%">Pros</th>
     <th width="50%">Cons</th></tr>
 </thead>
-<tr><td>interactive content without coding</td>
+<tr><td class="makealive-pro">interactive content without coding</td>
     <td>content is constrained by the conversion functions (determined by site
 admins)</td></tr>
-<tr><td>suitable for message boards or comment boxes</td>
+<tr><td class="makealive-pro">suitable for message boards or comment boxes</td>
     <td>site admins must vet individual conversion functions</td></tr>
-<tr><td>site admins can implement custom, domain-specific conversion functions</td>
+<tr><td class="makealive-pro">site admins can implement custom, domain-specific conversion functions</td>
     <td></td></tr>
-<tr><td>extremely light (just 1.6KB!)</td>
+<tr><td class="makealive-pro">extremely light (just 1.6KB!)</td>
     <td></td></tr>
-
 </table>
+
+To emphasize, in contrast to traditional \'plugins\' that provide web developers 
+interesting features to add to a website core, `makealive` components can be
+created by end-users.
 
 Other documentation pages describe additional points regarding 
 <a href="docs/server.html">setup</a> and <a href="docs/client.html">usage</a>.
@@ -141,7 +144,7 @@ Other documentation pages describe additional points regarding
 ## Acknowledgements
 
 `makealive` has been inspired collectively by all technologies that make the web 
-experience rich and interactive, but that leave some gaps too. Special mentions:
+experience interactive through plugins and visualizations. Special mentions:
 
 <table class="table intro">
 

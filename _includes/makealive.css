@@ -3,9 +3,9 @@
  * 
  * Styles for docs and examples pages
  *
- */
+*/
 
- /* Generic componenets */
+/* Generic componenets */
 body {
     font-size: 16px;
     padding-bottom: 96px;
@@ -17,7 +17,7 @@ h1 {
     margin-bottom: 1em;
 }
 h2, h3 {
-    margin-top: 2em;    
+    margin-top: 1.5em;    
 }
 h1, h2, h3 {
     color: #1a1a1a;
@@ -30,14 +30,14 @@ p {
 /* Table used in docs */
 table.intro {
     margin-top: 0.3em;
-    margin-bottom: 0.5em;
+    /** margin-bottom: 0.5em; **/
     font-size: 16px;
 }
 
 /* Tables used at the top of example pages */
 table {
     margin-top: -0.3em;
-    margin-bottom: 0.3em;
+    /* margin-bottom: 0.5em; */
     font-size: 14px;
 }
 td {
@@ -46,6 +46,10 @@ td {
 }
 td.table-label {
     color: #777777;    
+}
+td.makealive-pro {
+    background: #f9f2f4;
+    color: #000000;
 }
 
 
@@ -58,7 +62,9 @@ div.codepreview {
 
 /* Code blocks */
 pre {
-     font-size: 12px !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin-top: -0.5em;
 }
 
 
@@ -90,4 +96,8 @@ div.thumbnail {
 div.makealive {
     margin-bottom: 14px; 
     margin-top: 14px;
+}
+/* output of makealive on example pages */
+.codepreview div.makealive {
+    margin-top: 0px;
 }

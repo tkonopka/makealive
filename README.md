@@ -2,9 +2,16 @@
 
 `makealive` brings static html documents to life through controlled use of javascript.
 
+It is a plugin manager of sorts, which converts certain text inputs into 
+javascript-generated objects. In contrast to plugins that help web developers
+create widgets, `makealive` aims to provide such plugins accessible to end users,
+for example through markdown.
+
+
 ## Documentation
 
-See the [webpage](https://github.io/tkonopka/makealive) for background and usage details.
+See the [webpage](https://github.io/tkonopka/makealive) for further background and 
+the [library](https://github.io/tkonopka/makealive) for examples.
 
 
 ## Installation
