@@ -117,7 +117,7 @@ without explicitly writing executable code.
 
 <table class="table intro">
 <thead>
-<tr><th width="50%">Pros</th>
+<tr><th class="makealive-pro" width="50%">Pros</th>
     <th width="50%">Cons</th></tr>
 </thead>
 <tr><td class="makealive-pro">interactive content without coding</td>
