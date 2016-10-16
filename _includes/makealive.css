@@ -43,6 +43,7 @@ table {
 td {
     padding-right: 16px;
     line-height: 22px;
+    vertical-align: top;
 }
 td.table-label {
     color: #777777;    
@@ -50,6 +51,12 @@ td.table-label {
 td.makealive-pro {
     background: #f9f2f4;
     color: #000000;
+}
+.makealive table {
+    margin-top: -14px;
+}
+.makealive table td  {    
+    padding-right: 30px;
 }
 
 
@@ -70,8 +77,8 @@ pre {
 
 /* components on the examples - Try it section */
 hr {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
     border-top: 1px solid #aaaaaa;
 }
 textarea {

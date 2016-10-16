@@ -4,15 +4,11 @@ title: barplot01
 description: A simple bar plot
 author: Tomasz Konopka
 dependencies: <a href='https://d3js.org/'>d3 (v4)</a>
-required: title, xlab, ylab, data
-optional: size, margin, offset, padding
 ---
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
-This converter produces a simple bar plot. 
 
-There are minimal inputs and only a few opportunities for tuning.
 
 ### Example 1
 

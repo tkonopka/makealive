@@ -27,7 +27,7 @@ examples.md2html = function(x) {
     {
         allowedTags: ['code', 'pre'],
         allowedAttributes: {
-            code: ['class']
+            code: ['class']            
         }
     });       
     return makealive.convert(xclean);   
@@ -69,7 +69,7 @@ examples.examplealive = function(x) {
 document.addEventListener("DOMContentLoaded", function() {
 
     //var allcode = document.querySelectorAll('code.makealive');
-    var authorcontent = document.getElementById("maincontent");
+    var authorcontent = document.getElementById("body");
     // convert examples into code+preview
     var authoralive = examples.examplealive(authorcontent.innerHTML);    
     // convert prevew boxes
@@ -101,4 +101,37 @@ document.addEventListener("DOMContentLoaded", function() {
     }, false);
 });
 
+
+
+//makealive convert function to create a table with argument definitions
+makealive.lib.argtable = function(obj, x) {
+    
+    // the converter only accepts a function name
+    var xargs = [ makealive.defArg("function", "string", "function name", null) ];
+    makealive.checkArgs(x, xargs);
+    
+    // execute the makealive function to get its xargs
+    var fargs = makealive["lib"][x["function"]](null, null);
+    
+    // create a table with descriptions of the arguments
+    var req = '<b>[required] </b>';
+        
+    var result = '<table class="arguments">';
+    result += '<tr><th>Name</th><th>Type</th><th>Description</th></tr>';
+    for (var i=0; i<fargs.length; i++) {
+        var fi = fargs[i];
+        result += '<tr><td>'+fi.name+'</td>';
+        result += '<td>'+fi.type+'</td><td>';
+        if (fi.value===null) {
+            result+= req;                        
+        } 
+        result +=fi.description+'</td></tr>';
+    }    
+    result += '</table>';
+    // make sure the table is good html
+    result = sanitizeHtml(result);
+    
+    // add the table to the page
+    obj.innerHTML = result;
+}
 

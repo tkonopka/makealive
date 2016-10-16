@@ -175,64 +175,104 @@ makealive.convert = function(x) {
 
 
 /*
- * Check if an object x has the specified keys required
+ * Check if an object x contains values for all required and optional function arguments.
  *
  * This is a helper function that can be used within a library function to 
  * validate input
  * 
  * @param x object with key:value pairs
- * @param req array with strings (required keys)
+ * @param expected object holding argument definitions
  * 
- * @return string
+ * If all the required arguments are present, the function passes x to fillArgs
+ * and thus fills-in all the optional values.
  * 
- * If all the required arguments are present, the string will be empty ("").
- * If some parameters are missing, the string will contain their names.
+ * If some required parameters are missing, the function throws an error listing
+ * the missing arguments.
  * 
  */
-makealive.checkArguments = function(x, req) { 
+makealive.checkArgs = function(x, expected) { 
+    // first check 
     var result = "";   
-    for (var i=0; i<req.length; i++) {
-        if (!(req[i] in x)) {
-            result += " "+req[i];
-        }        
-    }   
-    return result;
+    for (var i=0; i<expected.length; i++) {        
+        if (expected[i].value===null) {            
+            var einame = expected[i].name;
+            if (!(einame in x)) 
+                result += " "+einame;            
+        }
+    } 
+    if (result != '') {
+        throw "missing arguments: "+result;
+    } 
+    return makealive.fillArgs(x, expected);
 }
 
 
 /*
- * Fill in missing property values with default values.
- * 
- * @param x object with key:value pairs
- * @param defaults objects holding key:value pairs
- * 
- * @result
- * 
- * if x contains a key defined in defaults, nothing happens and x.key remains unchanged.
- * if x does not contain key, then the object is modified so that x.key = defaults.key
- * 
- * After executing this functions, it is safe to assume that x.key is defined, either
- * explicitly from the original x or through default values set in defaults.
- * 
- */
-makealive.fillArguments = function(x, defaults) {
-    for (var key in defaults) {
-        if (defaults.hasOwnProperty(key)) {            
-            if (!x.hasOwnProperty(key)) {
-                x[key] = defaults[key];
-            }            
+* Fill in missing property values with default values.
+* 
+* @param x object with key:value pairs
+* @param expected array holding expected argument definitions
+* 
+* @result
+* 
+* if x contains a key defined in defaults, nothing happens and x.key remains unchanged.
+* if x does not contain key, then the object is modified so that x.key = defaults.key
+* 
+* After executing this functions, it is safe to assume that x.key is defined, either
+* explicitly from the original x or through default values set in defaults.
+* 
+*/
+makealive.fillArgs = function(x, expected) {    
+    for (var i=0; i<expected.length; i++) {        
+        // make sure the object x has a default value
+        var ikey = expected[i].name;        
+        if (!x.hasOwnProperty(ikey)) {
+            x[ikey] = expected[i]["value"];
+        }        
+        // for expected integers and numbers, parse and cast the input
+        var itype = expected[i]["type"].split(":")[0];        
+        if (itype=="integer") {
+            for (var j=0; j<x[ikey].length; j++) {
+                x[ikey][j] = +parseInt(x[ikey][j]);
+            }
+        } else if (itype=="number") {
+            for (var j=0; j<x[ikey].length; j++) {
+                x[ikey][j] = 0.0+parseFloat(x[ikey][j]);
+            }
         }
     }
     return x;
 }
 
 
+/**
+* Defines an object with a definition for an argument 
+* (can be used within makealive conversion functions)
+* 
+* @param name string
+* @param type string
+* @param description string
+* @param value object default value (set null to mark the argument as required)
+* 
+* @return object with the above elements
+* 
+*/
+makealive.defArg = function(name, type, description, value) {
+    var result = {};
+    result["name"] = name;
+    result["type"] = type;
+    result["description"] = description;
+    result["value"] = value;
+    return result;
+}
+
+
 /* ==========================================================================
- * 
- * End of makealive.js
- * 
- * Any code appearing below represents separate contributions.
- * A collection of conversion function compatible with makeAlive()
- *
- * ========================================================================== */
+* 
+* End of makealive.js
+* 
+* Any code appearing below represents separate contributions.
+* A collection of conversion function compatible with makeAlive()
+*
+* ========================================================================== */
 

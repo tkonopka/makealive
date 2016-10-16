@@ -127,7 +127,7 @@ admins)</td></tr>
     <td>site admins must vet individual conversion functions</td></tr>
 <tr><td class="makealive-pro">site admins can implement custom, domain-specific conversion functions</td>
     <td></td></tr>
-<tr><td class="makealive-pro">extremely light (just 1.6KB!)</td>
+<tr><td class="makealive-pro">extremely light (just 2KB!)</td>
     <td></td></tr>
 </table>
 
