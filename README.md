@@ -4,8 +4,7 @@
 
 It is a plugin manager of sorts, which converts certain text inputs into 
 javascript-generated objects. In contrast to plugins that help web developers
-create widgets, `makealive` aims to provide such plugins accessible to end users,
-for example through markdown.
+create widgets, `makealive` provides such plugins to end users, for example through markdown.
 
 
 ## Documentation
