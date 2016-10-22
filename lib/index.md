@@ -44,6 +44,15 @@ title: makealive library
       <div class="caption">venn02</div>
     </div>
 </div>
+</div>
 
 
+<h2>Charts using plotly.js</h2>
+
+<div class="row">
+<div class="col-sm-4 col-md-3">
+    <div class="thumbnail" onclick="location.href='plotly.html'">      
+      <div class="caption">plotly</div>
+    </div>
+</div>
 </div>
