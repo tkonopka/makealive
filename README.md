@@ -9,8 +9,8 @@ create widgets, `makealive` provides such plugins to end users, for example thro
 
 ## Documentation
 
-See the [webpage](https://github.io/tkonopka/makealive) for further background and 
-the [library](https://github.io/tkonopka/makealive) for examples.
+See the [webpage](https://tkonopka.github.io/makealive) for further background and 
+the [library](https://tkonopka.github.io/makealive) for examples.
 
 
 ## Installation
