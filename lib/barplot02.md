@@ -1,7 +1,7 @@
 ---
 layout: example
 title: barplot02
-description: A simple horizontal bar plot
+description: Simple horizontal bar plot
 author: Tomasz Konopka
 dependencies: <a href='https://d3js.org/'>d3 (v4)</a>
 ---

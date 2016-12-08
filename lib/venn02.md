@@ -1,7 +1,7 @@
 ---
 layout: example
 title: venn02
-description: produce a venn diagram (using input form)
+description: Venn diagram with input form
 author: Tomasz Konopka
 dependencies: <a href='https://d3js.org/'>d3 (v4)</a>, <a href='https://github.com/punkave/sanitize-html'>sanitize-html</a>, <a href="venn01.html">venn01</a>
 ---

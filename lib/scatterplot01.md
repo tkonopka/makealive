@@ -1,7 +1,7 @@
 ---
 layout: example
 title: scatterplot01
-description: A simple scatter plot
+description: Simple scatter plot
 author: Tomasz Konopka
 dependencies: <a href='https://d3js.org/'>d3 (v4)</a>
 ---

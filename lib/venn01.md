@@ -1,7 +1,7 @@
 ---
 layout: example
 title: venn01
-description: produce a venn diagram
+description: Venn diagram
 author: Tomasz Konopka
 dependencies: <a href='https://d3js.org/'>d3 (v4)</a>, <a href='https://github.com/punkave/sanitize-html'>sanitize-html</a>
 ---

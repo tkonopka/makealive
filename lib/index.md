@@ -12,6 +12,15 @@ title: makealive library
 </div>
 </div>
 
+<h2>Visualizations in plain js</h2>
+<div class="row">
+<div class="col-sm-4 col-md-3">
+    <div class="thumbnail" onclick="location.href='table01.html'">      
+      <div class="caption">table01</div>
+    </div>
+</div>
+</div>
+
 
 <h2>Charts using D3.js</h2>
 <div class="row">
