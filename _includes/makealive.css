@@ -108,3 +108,17 @@ div.makealive {
 .codepreview div.makealive {
     margin-top: 0px;
 }
+
+
+/* for thumbnails on the library index.md page */
+.thumbnail h3 {
+    font-size: 90%;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+.thumbnail p {
+    color: #555;
+    font-size: 90%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}

@@ -4,64 +4,66 @@ title: makealive library
 ---
 
 <h2>Demo</h2>
-<div class="row">
-<div class="col-sm-4 col-md-3">
-    <div class="thumbnail" onclick="location.href='isprime.html'">      
-      <div class="caption">isprime</div>      
-    </div>
-</div>
-</div>
+<pre><code class="makealive exthumbnail">{
+ "data": [
+  {
+    "function": "isprime",
+    "description": "Box showing if a number is prime"
+  }]
+}</code></pre>
 
-<h2>Visualizations in plain js</h2>
-<div class="row">
-<div class="col-sm-4 col-md-3">
-    <div class="thumbnail" onclick="location.href='table01.html'">      
-      <div class="caption">table01</div>
-    </div>
-</div>
-</div>
+
+<h2>Components in plain js</h2>
+<pre><code class="makealive exthumbnail">{
+ "data": [
+  {
+    "function": "url",
+    "description": "Load from a remote URL"
+  },
+  {
+    "function": "table01",
+    "description": "Styled and sortable tables"
+  }]
+}</code></pre>
+
 
 
 <h2>Charts using D3.js</h2>
-<div class="row">
-<div class="col-sm-4 col-md-3">
-    <div class="thumbnail" onclick="location.href='barplot01.html'">      
-      <div class="caption">barplot01</div>
-    </div>
-</div>
+<pre><code class="makealive exthumbnail">{
+ "data": [
+  {
+    "function": "barplot01",
+    "description": "Barplot with vertical bars"
+  },
+  {
+    "function": "barplot02",
+    "description": "Barplot with horizontal bars"
+  },
+  {
+    "function": "drc01",
+    "description": "Dose-response curves"
+  },
+  {
+    "function": "scatterplot01",
+    "description": "Scatter plot"
+  },
+  {
+    "function": "venn01",
+    "description": "Venn diagram"
+  },
+  {
+    "function": "venn02",
+    "description": "Venn diagram with custom set"
+  }]
+}</code></pre>
 
-<div class="col-sm-4 col-md-3">
-    <div class="thumbnail" onclick="location.href='barplot02.html'">      
-      <div class="caption">barplot02</div>
-    </div>
-</div>
-
-<div class="col-sm-4 col-md-3">
-    <div class="thumbnail" onclick="location.href='scatterplot01.html'">      
-      <div class="caption">scatterplot01</div>
-    </div>
-</div>
-
-<div class="col-sm-4 col-md-3">
-    <div class="thumbnail" onclick="location.href='venn01.html'">      
-      <div class="caption">venn01</div>
-    </div>
-</div>
-
-<div class="col-sm-4 col-md-3">
-    <div class="thumbnail" onclick="location.href='venn02.html'">      
-      <div class="caption">venn02</div>
-    </div>
-</div>
-</div>
 
 
 <h2>Charts using plotly.js</h2>
-
-<div class="row">
-<div class="col-sm-4 col-md-3">
-    <div class="thumbnail" onclick="location.href='plotly.html'">      
-      <div class="caption">plotly</div>
-    </div>
-</div>
-</div>
+<pre><code class="makealive exthumbnail">{
+ "data": [
+  {
+    "function": "plotly",
+    "description": "Many types of graphs powered by plotly"
+  }]
+}</code></pre>

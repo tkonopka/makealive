@@ -37,7 +37,7 @@ examples.md2html = function(x) {
 
 // helper function converts one code block into a side-by-side display:
 // one copy for reading code, one copy to convert by makealive
-examples.examplealive = function(x) {    
+examples.examplealive = function(x) {        
     // create a dom element with the desired initial html (does not display)
     var newdiv = document.createElement('div');
     newdiv.innerHTML = x;    
@@ -66,10 +66,9 @@ examples.examplealive = function(x) {
 
 
 // handling of author-submitted code snippets
-document.addEventListener("DOMContentLoaded", function() {
-
-    //var allcode = document.querySelectorAll('code.makealive');
-    var authorcontent = document.getElementById("body");
+document.addEventListener("DOMContentLoaded", function() {        
+    var authorcontent = document.getElementById("body");    
+    if (authorcontent==null) return;    
     // convert examples into code+preview
     var authoralive = examples.examplealive(authorcontent.innerHTML);    
     // convert prevew boxes
@@ -82,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // handling of live user-generated input
-document.addEventListener("DOMContentLoaded", function() {            
+document.addEventListener("DOMContentLoaded", function() {                
     var tryarea = document.getElementById("tryit");
     if (tryarea==null) {
         return;
@@ -135,3 +134,46 @@ makealive.lib.argtable = function(obj, x) {
     obj.innerHTML = result;
 }
 
+
+// convert index page thumbnails
+document.addEventListener("DOMContentLoaded", function() {  
+    // fetch content of library page
+    var libcontent = document.getElementById("library");    
+    if (libcontent==null) return;    
+    var libalive = makealive.convert(libcontent.innerHTML);            
+    libcontent.innerHTML = libalive.innerHTML;
+})
+
+
+
+// makealive conversion function to create a thumbanail
+makealive.lib.exthumbnail = function(obj, x) {
+        
+    // the converter accepts a set of function names and descriptors
+    var xargs = [ 
+    makealive.defArg("data", "array:function:description", "set of functions", null),         
+    ];
+    makealive.checkArgs(x, xargs);
+    
+    // helper function to create html for one example    
+    // f - function name (appears in thumbnail title and used to link)
+    // desc - a short description (appears in thumbnail below title)
+    var onethumbnail = function(f, desc) {
+        f = sanitizeHtml(f);
+        desc = sanitizeHtml(desc);        
+        var result = '<div class="col-sm-4 col-md-3">';
+        result += '<div class="thumbnail" onclick="location.href=\''+f+'.html\'"><div class="caption">';
+        result += '<h3>'+f+'</h3><p>'+desc+'</p>';        
+        result += '</div></div></div>';          
+        return result;
+    }
+    
+    // loop over components in data and generate thumbnail code    
+    var result = '<div class="row">';
+    for (var i=0; i<x.data.length; i++) {
+        result += onethumbnail(x.data[i]["function"], x.data[i]["description"]);
+    }
+    result += '</div>';
+            
+    obj.innerHTML = result;               
+}
