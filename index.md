@@ -48,7 +48,7 @@ Providing rich content calls for some programming, i.e. using javacsript.
 <tr><th width="50%">Pros</th>
     <th width="50%">Cons</th></tr>
 </thead>
-<tr><td>can receive live input</td>
+<tr><td>can perform calculations based on user input</td>
     <td>user-generated code can be a security risk</td></tr>
 <tr><td>can generate visual elements, e.g. through charts</td>
     <td>requires coding skills from the users</td></tr>
@@ -79,9 +79,9 @@ When the markup is converted to html, the data is transformed into a new object.
 
 ## Example
 
-Let\'s suppose we have an interest in the number 1271 and a conversion function 
-`isprime` that checks if a given number is prime and displays an output 
-message. We can write markdown as follows
+Let\'s suppose we have an interest in the number 1271. And let's suppose we have 
+a conversion function `isprime` that checks if a given number is prime and 
+displays an output message. We can write markdown as follows
 
 <pre><code>```makealive isprime
 {

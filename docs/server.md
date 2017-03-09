@@ -16,20 +16,20 @@ Let\'s see how to use the library.
 
 Let\'s suppose our webpage receives some text from a website visitor (perhaps directly 
 from a comment box, or perhaps from a database request). If this text is in `html`,
-we are almost ready to apply `makealive`. BUt if this text is in markdown, 
-we can convert it to html and sanitize it, for example using 
+we are almost ready to apply `makealive`. But if this text is in markdown, 
+we must first convert it into html and sanitize it, for example using 
 [showdown](https://github.com/showdownjs/showdown) and 
 [sanitize-html](https://github.com/punkave/sanitize-html). 
 
-Let\'s say the text is a variable `myhtml`. We can process convert it into a dynamic
-object my executing the convertion function
+Let\'s say the input is in a variable `myhtml`. We can process convert it into 
+a dynamic object by executing the `convert` function
 
 ```
 var alivediv = makealive.convert(myhtml);
 ```
 
-The new variable `alivediv` is a new DOM element (a div). We can then add this DOM 
-element into the appropriate location on the target web page. That's it!
+The new variable `alivediv` contains a new div. We can then add it into the 
+appropriate location on the target web page. That's it!
 
 
 ### Dependencies

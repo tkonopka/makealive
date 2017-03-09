@@ -48,6 +48,10 @@ title: makealive library
     "description": "Scatter plot"
   },
   {
+    "function": "stackedbarplot01",
+    "description": "Stacked barplot"
+  }, 
+  {
     "function": "venn01",
     "description": "Venn diagram"
   },

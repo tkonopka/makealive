@@ -16,7 +16,7 @@ on the main documentation page is as follows
 ```
 </code></pre>
 
-which is converted into
+The intention is to convert the above block into a `makealive` result, i.e.
 
 <pre><code class="makealive isprime">
 {
@@ -24,8 +24,9 @@ which is converted into
 }
 </code></pre>
 
-However, this may not always work. In those situations, it may be necessary
-to write the input in an alternative format 
+However, depending on how the website performs markdown-to-html conversion, 
+this may not always work. In those situations, it may be necessary to write the 
+input in an alternative format 
 
 <pre><code>&lt;pre&gt;&lt;code class="makealive isprime"&gt;
 {
@@ -34,7 +35,7 @@ to write the input in an alternative format
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
 
-Thus, instead of the shorthand syntax with three backticks, it may be necessary 
+In other words, instead of the shorthand syntax with three backticks, it may be necessary 
 to write `pre` and `code` tags. Note how the `code` tags should include classes with
 the makealive keyword and the name of the conversion function.
 
@@ -45,8 +46,7 @@ html is further processed using the `makealive` function, which assumes a certai
 formating for the intermediate html. The conversion has been tested with the 
 [showdown](https://github.com/showdownjs/showdown) converter with standard options, 
 but other markdown-to-html converters may vary. In those cases, it is necessary to
-bypass the markdown-to-code block conversion and write out the `pre` and `code` 
-tags by hand.
+bypass the three backticks shorthand and write out the `pre` and `code` tags by hand.
 
 
 

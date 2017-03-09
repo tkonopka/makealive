@@ -3,7 +3,7 @@ layout: example
 title: drc01
 description: Dose-response curve
 author: Tomasz Konopka
-dependencies: <a href='https://d3js.org/'>d3 (v4)</a>
+dependencies: <a href='https://d3js.org/'>d3 (v4)</a>, <a href="http://www.underscorejs.org">underscore.js</a>
 ---
 
 <script src="https://d3js.org/d3.v4.min.js"></script>

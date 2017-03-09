@@ -1,7 +1,7 @@
 /** 
  * makealive.js
  * 
- * Make html alive with javascript
+ * Turn json into interactive content
  * 
  * Author: Tomasz Konopka
  * 
