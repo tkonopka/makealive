@@ -52,6 +52,10 @@ title: makealive library
     "description": "Stacked barplot"
   }, 
   {
+    "function": "stackedbarplot02",
+    "description": "Stacked barplot with horizontal bars"
+  }, 
+  {
     "function": "venn01",
     "description": "Venn diagram"
   },

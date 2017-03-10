@@ -1,0 +1,22 @@
+/* 
+ * Styling for svg components created by makealive library functions  
+ * 
+ * Author: Tomasz Konopka
+ *
+ */
+
+
+ /** Positions of x, y labels **/
+svg.makealive text.ylab {
+    text-anchor: middle;
+}
+svg.makealive text.xlab.bottom {
+    text-anchor: middle;     
+}
+svg.makealive text.xlab.top {
+    text-anchor: start;
+}
+svg.makealive text.title {
+    text-anchor: start;    
+}
+

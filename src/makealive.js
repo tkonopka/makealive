@@ -34,7 +34,8 @@ makealive.types = [];
 /*
  * Auto-detection script that is activated upon page load.
  * 
- * It scans elements in makealive.lib and adds function names to the makealive.types array.
+ * Scans elements in makealive.lib and adds function names to the 
+ * makealive.types array.
  * 
  */
 document.addEventListener("DOMContentLoaded", function() {

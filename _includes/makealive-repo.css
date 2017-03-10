@@ -122,3 +122,19 @@ div.makealive {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
+
+
+/* Styling of makealive components created by lib functions */
+
+.makealive .tooltip {    
+    font-size: 80%;
+    display: inline-block;
+    text-align: center;
+    padding: 4px 8px;
+    color: #fff4f4;
+    position: relative;
+    background-color: #333333;
+    border-radius: 4px;
+    opacity: 0;
+}
