@@ -1,11 +1,5 @@
-/** 
- * makealive.js
- * 
- * Turn json into interactive content
- * 
- * Author: Tomasz Konopka
- * 
- */
+/* makealive.js. Copyright 2017 Tomasz Konopka. */
+
 
 
 var makealive = {};
@@ -108,6 +102,16 @@ makealive.setTypes = function(typelist) {
         }
     }
 }
+
+
+/*
+ * url for dynamic loading of conversion functions
+ * 
+ * When a conversion requires a function that is not in the makealive.lib
+ * set, the conversion tries to load the function at this base URL. 
+ * 
+ */
+makealive.url = null;
 
 
 /*

@@ -162,8 +162,8 @@ makealive.lib.exthumbnail = function(obj, x) {
         f = sanitizeHtml(f);
         desc = sanitizeHtml(desc);        
         var result = '<div class="col-sm-4 col-md-3">';
-        result += '<div class="thumbnail" onclick="location.href=\''+f+'.html\'"><div class="caption">';
-        result += '<h3>'+f+'</h3><p>'+desc+'</p>';        
+        result += '<div class="thumbnail" onclick="location.href=\''+f+'\'"><div class="caption">';
+        result += '<h3>'+f+'</h3><div class="libtooltip">'+desc+'</div><img src=\''+f+'/'+f+'.png\'>';        
         result += '</div></div></div>';          
         return result;
     }

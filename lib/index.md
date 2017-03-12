@@ -44,6 +44,18 @@ title: makealive library
     "description": "Dose-response curves"
   },
   {
+    "function": "plate12",
+    "description": "12-well plate"
+  },
+  {
+    "function": "plate24",
+    "description": "24-well plate"
+  },
+  {
+    "function": "plate96",
+    "description": "96-well plate"
+  },
+  {
     "function": "scatterplot01",
     "description": "Scatter plot"
   },
@@ -55,6 +67,14 @@ title: makealive library
     "function": "stackedbarplot02",
     "description": "Stacked barplot with horizontal bars"
   }, 
+  {
+    "function": "stripchart01",
+    "description": "Category plot"
+  },
+  {
+    "function": "stripchart02",
+    "description": "Horizontal category plot"
+  },
   {
     "function": "venn01",
     "description": "Venn diagram"
