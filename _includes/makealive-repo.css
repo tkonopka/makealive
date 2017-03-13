@@ -40,6 +40,10 @@ table {
     /* margin-bottom: 0.5em; */
     font-size: 14px;
 }
+div.backbtn {
+    margin-top: 0.5em;
+    margin-bottom: -0.5em;
+}
 td {
     padding-right: 16px;
     line-height: 22px;

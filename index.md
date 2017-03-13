@@ -3,6 +3,11 @@ layout: doc
 title: makealive
 ---
 
+<div class="alert alert-info" style="margin-bottom: 30px">
+  <strong>Looking for examples?</strong> See the <a href="lib/"><b>library</b></a> of makealive conversion functions.
+</div>
+
+
 `makealive` brings static html documents to life through controlled use of javascript.
 
 - [Background](#background)
