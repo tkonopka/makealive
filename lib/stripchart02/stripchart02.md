@@ -5,7 +5,7 @@ permalink: /lib/stripchart02/
 description: Horizontal category plot
 author: Tomasz Konopka
 dependencies: <a href='https://d3js.org/'>d3 (v4)</a>,
-    <a href='http://www.underscorejs.org'>underscore.js</a>
+    makealive-lib.js   
 ---
 
 <script src="https://d3js.org/d3.v4.min.js"></script>

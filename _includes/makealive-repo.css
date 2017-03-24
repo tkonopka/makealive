@@ -64,6 +64,11 @@ td.table-label {
 }
 
 
+#maincontent.example p {
+    width: 65%;
+    min-width: 240px;
+}
+
 /* code+preview rows */
 div.codepreview {
     margin-top: 24px;

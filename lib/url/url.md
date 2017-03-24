@@ -13,7 +13,7 @@ dependencies: none
 
 
 This conversion function enables loading makealive data from URLs. This enables 
-at least to interesting use cases:
+at least two interesting use cases:
 
  - reuse data and settings in multiple makealive components
  - keep makealive snippets concise by avoiding bulky data entry
@@ -39,7 +39,7 @@ conversion function through attribute "makealive".
 
 ### Example 2
 
-Another example wherein all settings and data are specified by the remote resource.
+Another example with all settings and data are specified by the remote resource.
 
 <pre class="example"><code class="makealive url">{
   "url": "https://gist.githubusercontent.com/tkonopka/b2ce73f6101edeebc88ebcff85aed63c/raw/4613135a46094fe8185bc0c4cbe3b4638039d68c/makealive.url.ex2.json"
@@ -50,7 +50,7 @@ Another example wherein all settings and data are specified by the remote resour
 
 ### Example 3
 
-It is possible to over-ride some of the data or settings specified in the remote 
+It is possible to override some of the data or settings specified in the remote 
 resource.
 
 Compared to example 1 above, note the switch of conversion function from vertical 

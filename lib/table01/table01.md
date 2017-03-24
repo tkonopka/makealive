@@ -4,7 +4,8 @@ title: table01
 permalink: /lib/table01/
 description: Styled, sortable table
 author: Tomasz Konopka
-dependencies: <a href='https://github.com/punkave/sanitize-html'>sanitize-html</a>, (bootstrap optional)
+dependencies: <a href='https://github.com/punkave/sanitize-html'>sanitize-html</a>, 
+    (bootstrap optional)
 ---
 
 

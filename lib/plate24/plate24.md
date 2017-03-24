@@ -4,9 +4,9 @@ title: plate24
 permalink: /lib/plate24/
 description: 24 well plate
 author: Tomasz Konopka
-dependencies: <a href='https://d3js.org/'>d3 (v4)</a>,
-    <a href='http://www.underscorejs.org'>underscore.js</a>,
-    plate12.js
+dependencies: <a href='https://d3js.org/'>d3 (v4)</a>,    
+    plate12.js,
+    makealive-lib.js
 ---
 
 <script src="https://d3js.org/d3.v4.min.js"></script>

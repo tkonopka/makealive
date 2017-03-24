@@ -4,8 +4,8 @@ title: stackedbarplot01
 permalink: /lib/stackedbarplot01/
 description: Stacked vertical bar plot
 author: Tomasz Konopka
-dependencies: <a href='https://d3js.org/'>d3 (v4)</a>, 
-    <a href='http://www.underscorejs.org'>underscore.js</a>
+dependencies: <a href='https://d3js.org/'>d3 (v4)</a>,
+    makealive-lib.js 
 ---
 
 <script src="https://d3js.org/d3.v4.min.js"></script>

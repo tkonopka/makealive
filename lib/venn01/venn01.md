@@ -5,8 +5,8 @@ permalink: /lib/venn01/
 description: Venn diagram
 author: Tomasz Konopka
 dependencies: <a href='https://d3js.org/'>d3 (v4)</a>, 
-    <a href='https://github.com/punkave/sanitize-html'>sanitize-html</a>, 
-    <a href="http://www.underscorejs.org">underscore.js</a>
+    <a href='https://github.com/punkave/sanitize-html'>sanitize-html</a>,
+    makealive-lib.js    
 ---
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
