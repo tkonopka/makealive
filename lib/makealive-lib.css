@@ -19,6 +19,12 @@ svg.makealive text.xlab.top {
 svg.makealive text.title {
     text-anchor: start;    
 }
+svg.makealive .xaxis.bottom text.rotated {
+    text-anchor: end;
+}
+svg.makealive .xaxis.top text.rotated {
+    text-anchor: start;
+}
 
 /* for mouse-over tooltip */
 .makealive .tooltip {    

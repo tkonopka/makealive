@@ -44,6 +44,10 @@ title: makealive library
     "description": "Dose-response curves"
   },
   {
+    "function": "matrix01",
+    "description": "Rectangular heatmap"
+  },
+  {
     "function": "plate12",
     "description": "12-well plate"
   },
