@@ -1,8 +1,9 @@
 {
     "name": "makealive",
     "version": "0.1.0",
+    "license": "MIT",
     "description": "Bring static documents to life through controlled use of javascript",
-    "scripts": {        
+    "scripts": {
         "prebuild": "rm -fr dist && mkdir dist",
         "build": "npm run prebuild && cat src/makealive.js > dist/makealive.js && find lib -type f -name *js | xargs cat src/makealive.js > dist/makealive-lib.js",
         "minify": "npm run build && uglifyjs dist/makealive.js --comments '/Copyright/' > dist/makealive.min.js && uglifyjs dist/makealive-lib.js --comments '/Copyright/' > dist/makealive-lib.min.js",
@@ -18,10 +19,10 @@
     "md",
     "js",
     "javascript",
-    "visualization"    
+    "visualization"
     ],
     "author": "Tomasz Konopka",
     "devDependencies" : {
-        "uglify-js": "^1.3.0"
-    }  
+        "uglify-js": "^3.4.0"
+    }
 }
